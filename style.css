@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #242329;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container .box {
+    height: 86vh;
+    border: 2px solid #34fe5c;
+    width: 75%;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    border-radius: 20px;
+    display: flex;
+    backdrop-filter: blur(20px);
+    box-shadow: -15px 17px 17px rgb(10, 10, 10, 0.15);
+}
+
+
+
+.container .box nav {
+    width: 95%;
+    height: 7%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+    padding: 20px;
+}
+
+.container .box nav ul {
+    display: flex;
+}
+
+.container .box nav ul li {
+    padding: 20px;
+    list-style: none;
+}
+
+.container .box nav ul li a {
+    color: gold;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+}
+
+
+
+.container nav ul li a:hover {
+    color: #6f34fe;
+}
+.container .box nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    position: absolute;
+    background-color: #34fe5c;
+    transition: 0.5s;
+}
+
+.container .box nav ul li a:hover::after {
+    content: "";
+    width: 100%;
+}
+.container .box nav a {
+    color: gold;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.container .contains {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80;
+    width: 100%;
+    padding-left: 80px;
+}
+
+.container .contains .section-1 {
+    width: 40%;
+    position: relative;
+}
+
+
+.container .contains .section-1 h1 {
+    font-size: 50px;
+    color: goldenrod;
+    margin-bottom: 20px;
+    font-weight: 700;
+
+}
+
+
+
+.container .contains .section-1 h3 {
+    color: #34fe5c;
+    font-size: 30px;
+}
+
+
+.container .contains .section-1 p {
+    font-size: 25px;
+    color: gold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 50px;
+}
+
+
+.container .contains .section-1 .btn {
+    border: 1px solid #34fe5c;
+    padding: 15px 20px;
+    background-color: #34fe5c;
+    color: #fff;
+
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 2px;
+}
+
+
+.container .contains .section-1 .btn:hover {
+    border: 1px solid #34fe5c;
+    padding: 15px 20px;
+    background-color: black;
+    color: #34fe5c;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 2px;
+}
+
+.container .contains .section-2 {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.container .contains .section-2 img {
+    width: 100%;
+}
+
+.container .contains .section-3 {
+    position: absolute;
+    display: flex;
+    left: 10px;
+    top: 30%;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.container .contains .section-3 a i {
+    font-size: 25px;
+    color: #7c8db1;
+    transition: 0.3s;
+}
+
+.container .contains .section-3 a i:hover {
+    color: #6f34fe;
+}
+
+
+@media screen and (max-width: 625px) {
+    .container {
+        height: 150vh;
+        width: 100vh;
+    }
+    .box {
+        width: 50%;
+        height: 50%;
+ 
+    }
+    body {
+        background-color: #242329;
+    }
+    nav  {
+        left: -1%;
+    }
+}
