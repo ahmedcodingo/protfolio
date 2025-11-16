@@ -301,7 +301,7 @@ body {
 
 .container .box nav ul li {
     list-style: none;
-    padding: 5px;
+    padding: 7px;
 }
 
 .container .box nav ul li a {
@@ -310,7 +310,12 @@ body {
     text-decoration: none;
     position: relative;
 }
-
+.container .box {
+    width: 95%;
+}
+    nav {
+        left: -1%;
+    }
 
 
     .container .contains .section-1 h3 {
@@ -329,3 +334,4 @@ body {
         font-size: 12px;
     }
 }
+
